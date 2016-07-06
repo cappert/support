@@ -10,7 +10,7 @@ title: Simplon Lyon, support promo 2
 email: eghaumez@simplon.co
 description: > # this means to ignore newlines until "baseurl:"
   In Code We Trust
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/support" # the subpath of your site, e.g. /blog
 url: "https://simplyon2.github.io/support" # the base hostname & protocol for your site
 twitter_username: rxlabz
 github_username:  simplyon2
