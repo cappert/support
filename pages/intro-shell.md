@@ -12,54 +12,92 @@ Il existe plusieurs : historiquement `sh` aujourd'hui le plus souvent `bash` ou 
 
 [Introduction aux lignes de commandes ( Code Academy)](https://www.codecademy.com/en/courses/learn-the-command-line)
 
-**cd** permet de se déplacer dans l'ordinateur
+`cd` permet de se déplacer dans l'ordinateur
 
 ```bash
 $ cd /home/monDossier/Documents
 ```
 
-**~** est un raccourci vers son dossier utilisateur
+`cd ../` permet d'aller dans le **dossier parent**
 
-**/** est un raccourci vers son dossier racine de l'ordi
+Les déplacements peuvent s'effectuer en *chemin relatif* ou en *chemin absolu*
 
-**cd ../** permet d'aller dans le dossier parent
+```bash
+$ cd /home/monDossier/Documents
+$ cd ../css
+```
 
-**ls -a** permet d'afficher le contenu du dossier en cours
+`pwd` permet de connaitre l'emplacement courant
 
-**pwd** permet d'afficher le chemin absolu( en partant de la racine de l'ordi ) du dossier dans lequel on se trouve
+`~` est un raccourci vers son **dossier utilisateur**
 
-**mkdir nomDuDossier** permet de créer un dossier
+`/` est un raccourci vers le **dossier racine de l'ordinateur**
 
-**touch nomFichier** permet de créer un fichier
+`ls -a` permet d'afficher le **contenu du dossier en cours**
 
-**rm** permet de supprimer un fichier
-**rm -rf** permet de supprimer un dossier et son contenu
+`pwd` permet d'afficher le chemin absolu( en partant de la racine de l'ordi ) du dossier dans lequel on se trouve
 
-**cat** vous permet d'afficher le contenu d'un fichier
+`mkdir nomDuDossier` permet de créer un dossier
 
-**mv fichier destination** permet de déplacer un fichier/dossier
+`touch nomFichier` permet de créer un fichier
 
-**cp fichier destination** permet de copier/coller un fichier/dossier
+`rm` permet de supprimer un fichier
 
+`rm -rf` permet de supprimer un dossier et son contenu
 
-#### Exercice
+`cat` vous permet d'afficher le contenu d'un fichier
+
+`mv fichier destination` permet de déplacer un fichier/dossier
+
+`cp fichier destination` permet de copier/coller un fichier/dossier
+
+## Shortcuts / Raccourcis
+
+Stylesheet : https://github.com/0nn0/terminal-mac-cheatsheet/wiki/Terminal-Cheatsheet-for-Mac-(-basics-)
+
++ fin de ligne » ctrl + A
++ début de ligne » ctrl + E
+
++ vider l'écran ctrl + L / Cmd + K
+
++ quitter process en cours » ctrl + C
++ quitter/fermer shell en cours » ctrl + D (si ligne vide)
+
+**Déplacement**
+
++ caractère suivant » ctrl + F
++ caractère precedent » ctrl + B
+
++ mot suivant » Esc + F
++ mot précédent » Esc + B
+
+**Suppressions**
+
++ mot avant ctrl + W
++ ligne après curseur » ctrl + K
+
+## Ressources
+
+- [OpenClassroom Bash](https://openclassrooms.com/courses/reprenez-le-controle-a-l-aide-de-linux/vim-l-editeur-de-texte-du-programmeur)
+- [Guide Bash débutant](http://guidespratiques.traduc.org/guides/vf/Bash-Beginners-Guide/Bash-Beginners-Guide.html)
+- [Code Academy : Learn the command-line](https://www.codecademy.com/learn/learn-the-command-line)
+
+## Défis / Jeu
 
 En n'utilisant que des lignes de commandes dans le terminal :
-+ créez un dossier appelé 'exercices' dans votre dossier personnel
++ créez un dossier appelé 'projet' dans votre dossier personnel
 + dans ce nouveau dossier, créez :
 	+ un fichier 'index.html'
 	+ un fichier 'styles.css'
 	+ un sous-dossier 'images'
 
+Après le module Code Academy, pour vous entrainer, vous pouvez essayer le petit jeu ['bash_bots'](https://github.com/Boyquotes/bash_bots)
 
-Après le module Code Academy, pour vous entrainer, vous pouvez essayer d'utiliser le petit jeu 'bash_bots'
-
-pour ce faire, dans le terminal :
+Pour ce faire, dans le terminal :
 
 + placez vous dans votre dossier d'utilisateur
 + créez un sous-dossier exercices
 + allez dans ce nouveau dossier exercices
-+ tapez :
 
 ```bash
 $ git clone https://github.com/Boyquotes/bash_bots.git
