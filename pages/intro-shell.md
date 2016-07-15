@@ -97,19 +97,21 @@ $ cd ../css
 ## Défis / Jeu
 
 En n'utilisant que des lignes de commandes dans le terminal :
-+ créez un dossier appelé 'projet' dans votre dossier personnel
-+ dans ce nouveau dossier, créez :
-	+ un fichier 'index.html'
-	+ un fichier 'styles.css'
-	+ un sous-dossier 'images'
+
+- créez un dossier appelé 'projet' dans votre dossier personnel
+
+- dans ce nouveau dossier, créez :
+	- un fichier 'index.html'
+	- un fichier 'styles.css'
+	- un sous-dossier 'images'
 
 Après le module Code Academy, pour vous entrainer, vous pouvez essayer le petit jeu ['bash_bots'](https://github.com/Boyquotes/bash_bots)
 
 Pour ce faire, dans le terminal :
 
-+ placez vous dans votre dossier d'utilisateur
-+ créez un sous-dossier exercices
-+ allez dans ce nouveau dossier exercices
+- placez vous dans votre dossier d'utilisateur
+- créez un sous-dossier exercices
+- allez dans ce nouveau dossier exercices
 
 ```bash
 $ git clone https://github.com/Boyquotes/bash_bots.git
