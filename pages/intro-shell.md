@@ -14,7 +14,9 @@ Il en existe plusieurs : historiquement `sh` aujourd'hui le plus souvent `bash` 
 
 ### Terminal / Console
 
-![shell prompt]({{site.url}}/img/shell-prompt.png)
+**Invite / Prompt**
+
+![shell prompt](../img/shell_prompt.png)
 
 
 `cd` permet de se déplacer dans l'ordinateur
