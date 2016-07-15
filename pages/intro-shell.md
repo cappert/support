@@ -6,11 +6,16 @@ permalink: /intro-shell/
 
 Un [Shell](https://fr.wikipedia.org/wiki/Interface_syst%C3%A8me) est une interface utilisateur permettant d'accéder aux fonctions d'un OS, souvent en ligne de commande.
 Le shell Unix en est un exemple, disponible sous linux et MacOS via la console || Terminal.
-Il existe plusieurs : historiquement `sh` aujourd'hui le plus souvent `bash` ou encore `zsh` ou `fish`
+Il en existe plusieurs : historiquement `sh` aujourd'hui le plus souvent `bash` ou encore `zsh` ou `fish`
 
 [:book: Shell - Interface systeme ()](https://fr.wikipedia.org/wiki/Interface_système)
 
 [Introduction aux lignes de commandes ( Code Academy)](https://www.codecademy.com/en/courses/learn-the-command-line)
+
+### Terminal / Console
+
+![shell prompt]({{site.url}}/img/shell-prompt.png)
+
 
 `cd` permet de se déplacer dans l'ordinateur
 
@@ -51,30 +56,35 @@ $ cd ../css
 
 `cp fichier destination` permet de copier/coller un fichier/dossier
 
-## Shortcuts / Raccourcis
+<details>
+<summary>Shortcuts / Raccourcis</summary>
 
-Stylesheet : https://github.com/0nn0/terminal-mac-cheatsheet/wiki/Terminal-Cheatsheet-for-Mac-(-basics-)
+<ul>
+    <li> vider l'écran ctrl + L / Cmd + K</li>
+    <li> quitter process en cours » ctrl + C</li>
+    <li> quitter/fermer shell en cours » ctrl + D (si ligne vide)</li>
+</ul>
 
-+ fin de ligne » ctrl + A
-+ début de ligne » ctrl + E
+<h4>Déplacement</h4>
+<ul>
+    <li> fin de ligne <em>ctrl + A</em></li>
+    <li> début de ligne » ctrl + E</li>
+    <li> caractère suivant » <em>ctrl + F</em></li>
+    <li> caractère precedent » <em>ctrl + B</em></li>
+    <li> mot suivant » <em>Esc + F</em></li>
+<li> mot précédent » <em>Esc + B</em></li>
+</ul>
 
-+ vider l'écran ctrl + L / Cmd + K
+<h4>Suppressions</h4>
+<ul>
+    <li> mot avant » <em>ctrl + W</em></li>
+    <li> ligne après curseur » <em>ctrl + K</em></li>
+</ul>
 
-+ quitter process en cours » ctrl + C
-+ quitter/fermer shell en cours » ctrl + D (si ligne vide)
+<a href="https://github.com/0nn0/terminal-mac-cheatsheet"> + de raccourcis</a>
 
-**Déplacement**
+</details>
 
-+ caractère suivant » ctrl + F
-+ caractère precedent » ctrl + B
-
-+ mot suivant » Esc + F
-+ mot précédent » Esc + B
-
-**Suppressions**
-
-+ mot avant ctrl + W
-+ ligne après curseur » ctrl + K
 
 ## Ressources
 

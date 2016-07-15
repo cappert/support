@@ -32,3 +32,16 @@ a, a:hover{
     color:$grey-color;
   }
 }
+
+details{
+  background: #eef2f4;
+  margin : 14px 0;
+  padding : 8px
+}
+
+details[open]{
+  background: #f0f0f0;
+}
+summary:focus{
+  outline:none;
+}
