@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+</head>
+<body>
+<script type="text/javascript">
+
+
+    function maPosition(position) {
+
+        alert('Lat: ' + position.coords.latitude + ' ' + 'Lon: ' + position.coords.longitude);
+
+        var infopos = "Position déterminée :\n";
+        infopos += "Latitude : "+position.coords.latitude +"\n";
+        infopos += "Longitude: "+position.coords.longitude+"\n";
+        infopos += "Altitude : "+position.coords.altitude +"\n";
+        document.getElementById("infoposition").innerHTML = infopos;
+    }
+
+    function onGeoError(error)
+    {
+        switch(error.code)
+        {
+            case error.PERMISSION_DENIED: alert("user did not share geolocation data");
+                break;
+
+            case error.POSITION_UNAVAILABLE: alert("could not detect current position");
+                break;
+
+            case error.TIMEOUT: alert("retrieving position timed out");
+                break;
+
+            default: alert("unknown error");
+                break;
+        }
+    }
+
+    function geo(){
+
+    if(navigator.geolocation)
+        navigator.geolocation.getCurrentPosition(maPosition, onGeoError);
+    else {
+        alert('no api');
+    }
+    }
+</script>
+
+<a href="#" onclick="geo()">geoloc</a>
+
+<div id="infoposition"></div>
+
+</body>
+</html>
