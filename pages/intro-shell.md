@@ -8,9 +8,7 @@ Un [Shell](https://fr.wikipedia.org/wiki/Interface_syst%C3%A8me) est une interfa
 Le shell Unix en est un exemple, disponible sous linux et MacOS via la console || Terminal.
 Il en existe plusieurs : historiquement `sh` aujourd'hui le plus souvent `bash` ou encore `zsh` ou `fish`
 
-[:book: Shell - Interface systeme ()](https://fr.wikipedia.org/wiki/Interface_système)
-
-[Introduction aux lignes de commandes ( Code Academy)](https://www.codecademy.com/en/courses/learn-the-command-line)
+[:book: Shell - Interface systeme](https://fr.wikipedia.org/wiki/Interface_système)
 
 ### Terminal / Console
 
@@ -18,6 +16,8 @@ Il en existe plusieurs : historiquement `sh` aujourd'hui le plus souvent `bash` 
 
 ![shell prompt](../img/shell_prompt.png)
 
+
+### Principales Commandes / Instructions
 
 `cd` permet de se déplacer dans l'ordinateur
 
@@ -36,11 +36,14 @@ $ cd ../css
 
 `pwd` permet de connaitre l'emplacement courant
 
-`~` est un raccourci vers son **dossier utilisateur**
+`/` est un raccourci vers le **dossier racine de l'ordinateur** ( root / la "racine du chemin" )
 
-`/` est un raccourci vers le **dossier racine de l'ordinateur**
+`~` est un raccourci vers son **dossier utilisateur**. En le chemin absolu de notre dossier personnel est :
 
-`ls -a` permet d'afficher le **contenu du dossier en cours**
+- sur Ubuntu : */home/nom_utilisateur*
+- sur MacOS : */Users/nom_utilisateur*
+
+`ls -a` permet d'afficher tout le **contenu du dossier en cours** ( même les fichiers cachés ) -[référence `ls`](http://pwet.fr/man/linux/commandes/ls)
 
 `pwd` permet d'afficher le chemin absolu( en partant de la racine de l'ordi ) du dossier dans lequel on se trouve
 
@@ -48,15 +51,16 @@ $ cd ../css
 
 `touch nomFichier` permet de créer un fichier
 
-`rm` permet de supprimer un fichier
+`rm chemin/fichier` permet de supprimer un fichier
 
-`rm -rf` permet de supprimer un dossier et son contenu
+`rm -rf chemin/dossier` et `rmdir chemin/dossier` permettent de supprimer un dossier et son contenu
 
 `cat` vous permet d'afficher le contenu d'un fichier
 
-`mv fichier destination` permet de déplacer un fichier/dossier
+`mv chemin/fichier destination` permet de déplacer un fichier/dossier
 
-`cp fichier destination` permet de copier/coller un fichier/dossier
+`cp chemin/fichier destination` permet de copier/coller un fichier/dossier
+
 
 <details>
 <summary>Shortcuts / Raccourcis</summary>
@@ -88,11 +92,23 @@ $ cd ../css
 </details>
 
 
-## Ressources
+## :books: Ressources
 
-- [OpenClassroom Bash](https://openclassrooms.com/courses/reprenez-le-controle-a-l-aide-de-linux/vim-l-editeur-de-texte-du-programmeur)
+- [:memo: OpenClassroom Bash](https://openclassrooms.com/courses/reprenez-le-controle-a-l-aide-de-linux/vim-l-editeur-de-texte-du-programmeur)
+- [:page_with_curl: Code Academy : Learn the command-line :us:](https://www.codecademy.com/learn/learn-the-command-line)
+
+- [:tv: Linux Command Line - 1 - directory operations :us:](https://www.youtube.com/watch?v=sHGoJsAEpsM)
+- [:tv: Linux Command Line - 2 - file operations :us:](https://www.youtube.com/watch?v=Xe72WbxaT8k)
+- [:tv: Linux Command Line - 3 - file operations :us:](https://www.youtube.com/watch?v=_4wO_0m-UMs)
+- [:tv: Linux Command Line - 4 - finding files :us:](https://www.youtube.com/watch?v=_ZVCbIpHWmE)
+- [:tv: Linux Command Line - 5 - Redirections & pipes :us:](https://www.youtube.com/watch?v=Z7afaRSVJ6I)
+
+- [:memo: Learning the Shell :us:](http://linuxcommand.org/lc3_learning_the_shell.php)
+- [:memo: Writing Shell Scripts :us:](http://linuxcommand.org/lc3_writing_shell_scripts.php)
+
 - [Guide Bash débutant](http://guidespratiques.traduc.org/guides/vf/Bash-Beginners-Guide/Bash-Beginners-Guide.html)
-- [Code Academy : Learn the command-line](https://www.codecademy.com/learn/learn-the-command-line)
+
+___
 
 ## Défis / Jeu
 
