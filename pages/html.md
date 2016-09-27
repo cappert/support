@@ -1,7 +1,7 @@
 ---
 layout: page
 title: HTML CSS
-permalink: /html-css/
+permalink: /html/
 ---
 
 ## Éléments HTML de base
