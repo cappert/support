@@ -1,6 +1,6 @@
 ---
 layout: page
-title: HTML/CSS
+title: HTML CSS
 permalink: /html-css/
 ---
 
