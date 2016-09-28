@@ -253,13 +253,14 @@ Créer une page web affichant l'heure et/ou la date
 - animé ?
 
 ## Sass
+
 :wrench: Sass : outil pour webdesign / intégration => ajoute des fonctionnalités au "langage" CSS (variables, opérations "arithmétique")
 - [les bases](http://sass-lang.com/guide)
 - :fire: [bac à SaSSble en ligne](http://sass.js.org) : cf. bouton "Convert en bas"
 - [installation](http://sass-lang.com/install) ( un peu long et laborieux : il faut installer Ruby(+etc...) mais c'est plutôt une bonne chose de faite...)
 - :books: [la doc complete](http://sass-lang.com/guide)
 
-### Intro Responsive Web Design ( RWD )
+## Intro Responsive Web Design ( RWD )
 
 ### Les media queries
 
@@ -288,7 +289,7 @@ La syntaxe est : `@media [logic] mediaType [and (condition) [and...]]`
 
 où logic est *only* ou *not* (optionnel), et [mediaType](https://developer.mozilla.org/fr/docs/Web/CSS/Media_queries) = screen || print || tv || ..
 
-#### Exemples
+### Exemples
 
 [Exemple - Responsive layout](http://jsbin.com/fawiko/1/edit?html,output) » le site passe de 1 à 2 colonnes selon la taille de la fenêtre
 
@@ -349,7 +350,7 @@ un iphone ayant une résolution "réelle" de 640*960, sera consideré comme un �
 - [Comprendre le viewport - Alsacréation](http://www.alsacreations.com/article/lire/1490-comprendre-le-viewport-dans-le-web-mobile.html)
 - [Google Web Fundamentals RWD ](https://developers.google.com/web/fundamentals/design-and-ui/responsive/fundamentals/?hl=fr)
 
-### Unités
+## Unités
 
 - width, height : privilégiez les %, éviter les tailles en px pour les élements qui doivent s'adapter
 
@@ -357,14 +358,14 @@ un iphone ayant une résolution "réelle" de 640*960, sera consideré comme un �
 
 - [Exemple](http://jsbin.com/fegopom/edit?html,output)
 
-#### Lectures 
+### Lectures 
 
 - [rem/em/px Graphikart](https://www.grafikart.fr/tutoriels/html-css/font-size-rem-em-px-477)
 - [Viewport sized typo](https://css-tricks.com/viewport-sized-typography/)
 - [RWD articles](http://thenewcode.com/925/Web-Developer-Reading-List-Responsive-Design)
 - [em Vs rem](http://webdesign.tutsplus.com/tutorials/comprehensive-guide-when-to-use-em-vs-rem--cms-23984)
 
-### Conception
+## Conception
 
 **Du bon sens**(!!!)
 
@@ -390,7 +391,7 @@ ou pour une application / back-office /
 - [Référence Qualité HTML](http://checklists.opquast.com/oqs-v3/) : liste des points à valider pour respecter l
 - [Principales checklists HTML](https://checklists.opquast.com/fr/)
 
-### librairies CSS
+## librairies CSS
 
 elles offrent le plus souvent :
 
@@ -443,7 +444,7 @@ Librairie CSS créé par les équipes de Twitter
 </html>
 ```
 
-**Tutos Bootstrap**
+####Tutos Bootstrap
 
 - [Bootstrap par la pratique](http://www.opentuto.com/informatique/maitriser-bootstrap-3-par-la-pratique/)
 - [intro Bootstrap - OC](https://openclassrooms.com/courses/prenez-en-main-bootstrap)
@@ -458,7 +459,7 @@ Librairie CSS créé par les équipes de Twitter
   - & [application web](http://foundation.zurb.com/apps.html) (basé sur AngularJS) 
 - ...
 
-**Tutos Foundation**
+####Tutos Foundation
 
 - [:tv: intro foundations](https://www.youtube.com/watch?v=2QcpR6cHpnk&list=PL6oNLEZTnXsg2f3scFapWJsjywyMKpsF9) (12 videos :us:)
 

@@ -51,3 +51,49 @@ details[open]{
 summary:focus{
   outline:none;
 }
+
+#top-menu{
+
+  text-align: right;
+  cursor: pointer;
+
+  li{
+    /*display: inline-block;*/
+    list-style: none;
+  }
+
+  #menu-container{
+    /*width: 120px;*/
+    display: none;
+    position: absolute;
+    margin-left:0;
+    text-align: left;
+
+    li{
+      padding: 10px;
+      margin:0;
+      /*border: #E91E63 1px solid ;*/
+      /*background-color: #E91E63;*/
+      background-color: #00BCD4;
+      color: #fff;
+      font-size:0.9rem;
+      line-height: 20px;
+
+      &:hover{
+        background-color: $brand-color-dark;
+      }
+
+      a, a:link, a:hover,a:visited{
+        color:#fff;
+      }
+    }
+
+  }
+
+  &:hover{
+    #menu-container{
+      display: block;
+    }
+  }
+
+}
