@@ -11,6 +11,8 @@
   padding-left: 120px;
 }
 
+
+
 a, a:hover{
   color:#00BCD4;
 
@@ -19,7 +21,9 @@ a, a:hover{
   }
 }
 
-
+.site-nav{
+  border: 0px;
+}
 
 .post-content {
   h2{
@@ -96,4 +100,25 @@ summary:focus{
     }
   }
 
+}
+
+
+@media screen and (max-width:480px) {
+  .site-title{
+    background: url("../img/logo_smplyon_h.png") no-repeat no-repeat top left;
+    background-position-y: 14px;
+    padding-top: 30px;
+    padding-left: 0;
+    font-size: 1.1rem;
+  }
+
+  #menu-container {
+    right: 0;
+    width: 200px;
+  }
+
+  #menu-container li a{
+    font-size: 1.3rem;
+
+  }
 }
