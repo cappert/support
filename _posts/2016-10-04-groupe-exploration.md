@@ -7,19 +7,19 @@ categories: hebdo
 
 ## [SVG](https://tienn1962.github.io/Groupe_SVG/)
 
-![svg](../../../../support/img/svg.jpg)
+![svg](../../../img/svg.jpg)
 
 ## [Canvas](https://dirago.github.io/Canvas/)
-![canvas](../../../../support/img/canvas.jpg)
+![canvas](../../../img/canvas.jpg)
 
 ## [Flex](https://ptitim.github.io/Flex/)
-![flex](../../../../support/img/flex.jpg)
+![flex](../../../img/flex.jpg)
 
 ## [Anims](http://animus-transismus.tk/accueil)
-![anims](../../../../support/img/anims.jpg)
+![anims](../../../img/anims.jpg)
 
 ## [Filtres & transformations](https://anna-ap.github.io/ProjetSimplon/filtreTransform/index.html) 
-![filtres](../../../../support/img/filtres.jpg)
+![filtres](../../../img/filtres.jpg)
 
 ## [Audio/Video](https://myrng.github.io/Media_Project/index.html) 
-![av](../../../../support/img/av.jpg)
+![av](../../../img/av.jpg)
