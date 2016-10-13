@@ -1,4 +1,8 @@
-# Programme part 2
+---
+layout: page
+title: Programme - partie 2
+permalink: /programme/
+---
 
 ## Tronc commun
 PHP / MYSQL "tronc commun" pendant les 4/5 prochaines semaines ( incluant une intro "aux CMS", appliquée à Wordpress et son "moteur")
