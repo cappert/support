@@ -23,7 +23,8 @@ PHP / MYSQL "tronc commun" pendant les 4/5 prochaines semaines ( incluant une in
 - pour les back : docker ? NodeJS ?
 
 
-Du coup, de décembre à mi janvier, en terme d’organisation, j’imagine pour le moment : 
+Du coup, de décembre à mi janvier, en terme d’organisation, j’imagine pour le moment :
+
 - lundi : back-end : apport théorique + défis & approfondissement jusqu’au jeudi
 - mardi : front-end : apport théorique + défis / exos jusqu’au jeudi
 - jeudi : apport / suivi matin :back-end / aprem : front end
