@@ -120,7 +120,7 @@ On accède aux différents élements d'un tableau grâce à son index, par exemp
 console.log( '1er prenom', prenoms[0])
 ```
 
-![tableau-index](../../../../img/tableau-index.png)
+![tableau-index](../img/tableau-index.png)
 
 - ajouter un élement : `monTableau.push( nouvelElement );`
 - récupérer le nombre d'élements : `var nombreElements = monTableau.length;`
@@ -300,15 +300,15 @@ Si une fonction ne modifie rien au contexte d'éxecution, elle est appellé "fon
 
 - Ecrire un script qui affiche dans la console
 
-![pyramide_diese](../../../../img/pyramide_diese.png)
+![pyramide_diese](../img/pyramide_diese.png)
 
 - Ecrire un script qui affiche dans la console
 
-![pyramide_num](../../../../img/pyramide_chiffres.png)
+![pyramide_num](../img/pyramide_chiffres.png)
 
 - Ecrire un script qui affiche dans la console
 
-![pyramide_lettres](../../../../img/pyramide_lettres.png)
+![pyramide_lettres](../img/pyramide_lettres.png)
 
 #### :computer: Fizzbuzz
 
