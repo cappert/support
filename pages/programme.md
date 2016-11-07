@@ -7,7 +7,14 @@ permalink: /programme/
 ## Tronc commun
 PHP / MYSQL "tronc commun" pendant les 4/5 prochaines semaines ( incluant une intro "aux CMS", appliquée à Wordpress et son "moteur")
 
-## fin novembre / décembre : spécialisation 
+- 7-10/11 : PHP/MySQL/JS(Ajax)
+- 14-18/11 : PHP/MySQL/Wordpress
+- 21-25/11 : 
+- 28/11-02/12
+
+## Décembre : spécialisation 
+
+- 05-/12
 
 - front & back :
   - au moins une semaine de théorie prog. orientée objet + tests unitaires + design patterns
