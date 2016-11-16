@@ -73,6 +73,10 @@ summary:focus{
     margin-left:0;
     text-align: left;
 
+    ul{
+      margin-left: 4px;
+    }
+
     li{
       padding: 10px;
       margin:0;
@@ -121,4 +125,89 @@ summary:focus{
     font-size: 1.3rem;
 
   }
+}
+
+
+/**
+ HOME
+*/
+
+#divider{
+  display: flex;
+  width: 100%;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+}
+
+.post-list{
+  display: flex;
+  flex-wrap: wrap;
+  /*width: 620px;*/
+}
+
+.chapter{
+  width: 180px;
+  margin: 8px;
+
+  h2 a{
+    font-size:1.2rem;
+  }
+
+}
+
+#calendar{
+  background-color: #f2f5f6;
+  width: 200px;
+  min-width: 200px;
+  /*height: 400px;*/
+  padding: 8px;
+  font-size: 0.8rem;
+
+  h4{
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  ul{
+
+    li{
+      margin-top: 12px;
+
+      .event-date{
+        font-size: 0.7rem;
+        color:#888;
+      }
+    }
+
+  }
+
+  .cal-details{
+    text-align: right;
+
+    a{
+      padding:6px;
+      background-color: #00BCD4;
+      color:#fff;
+    }
+  }
+}
+
+@media screen and (max-width: 480px){
+  #divider{
+    display: block;
+  }
+
+  .post-list{
+    width: 100%;
+    display: block;
+  }
+
+  #calendar{
+    width: 100%;
+  }
+
+  .chapter{
+    width: 100%;
+  }
+
 }

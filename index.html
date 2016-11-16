@@ -4,20 +4,38 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Support de formation</h1>
+    <div id="divider">
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <div>
+            <ul class="post-list">
+                {% for post in site.posts %}
+                <li>
+                    <span class="post-meta">{{ post.date | date: "%-d %b, %Y" }}</span>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+                    <section class="chapter">
+                        <h2>
+                            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                        </h2>
+                    </section>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
 
-  <!--<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>-->
+        <div id="calendar">
+            <h4>Prochains évènements</h4>
+            <ul id="calendarList"></ul>
+            <p class="cal-details"><a
+                    href="https://calendar.google.com/calendar/embed?src=simplon.co_7sc0sp073u3svukpopmhob9fmg%40group.calendar.google.com&ctz=Europe/Paris"
+                    target="_blank"
+            >Détails</a></p>
+        </div>
+
+        <!--<section id="calendar">
+          <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=280&amp;wkst=2&amp;bgcolor=%23FFFFFF&amp;src=simplon.co_7sc0sp073u3svukpopmhob9fmg%40group.calendar.google.com&amp;color=%238C500B&amp;ctz=Europe%2FParis" style="border-width:0" width="280" height="280" frameborder="0" scrolling="no"></iframe>
+        </section>-->
+
+    </div>
+    <!--<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>-->
 
 </div>
