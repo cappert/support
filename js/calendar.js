@@ -76,7 +76,7 @@ function filterEvents(events) {
     }).filter(function (e) {
         var start = Date.parse(e.start.dateTime);
         //console.log('start / now', start, now);
-        return start >= limit;
+        return start >= Date.now();
     });
 }
 
