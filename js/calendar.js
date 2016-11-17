@@ -50,7 +50,6 @@ function displayEvents(events) {
     events = filterEvents(events);
     events.sort(chronoSort);
     var eventViews = events.map(function (e) {
-        console.log('test');
         var v = document.createElement('li');
         var dt = document.createElement('div');
         dt.classList.add('event-date');
@@ -62,7 +61,7 @@ function displayEvents(events) {
         return v;
     });
 
-    console.log('displayEvents...', eventViews.length);
+    //console.log('displayEvents...', eventViews.length);
     _.first(eventViews, 5).forEach(function (v) {
         return view.appendChild(v);
     });
@@ -105,7 +104,7 @@ var CalLoader = function () {
 
             console.log('url:', this.url);
             http('GET', this.url).then(function (value) {
-                console.log('value:', value);
+                //console.log('value:', value);
                 _this.data = JSON.parse(value);
                 _this.onData(_this.data);
             }, function (reason) {
