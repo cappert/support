@@ -70,7 +70,7 @@ function displayEvents(events) {
 
 function filterEvents(events) {
     console.log('filterEvents...');
-    var limit = Date.now() - 12 * 60 * 60;
+    var limit = Date.now() - 12 * 60 * 60 * 1000;
     return events.filter(function (e) {
         return e.start != undefined && e.start.dateTime != undefined;
     }).filter(function (e) {
