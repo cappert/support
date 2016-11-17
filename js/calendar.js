@@ -118,3 +118,5 @@ var CalLoader = function () {
 
 var cal = new CalLoader(CAL_URL, onCalData);
 cal.load();
+
+//# sourceMappingURL=calendar.js.map
