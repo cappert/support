@@ -40,7 +40,7 @@ function parseDate(t) {
 }
 
 function onCalData(data) {
-    console.log('num events', data.items.length);
+    //console.log('num events', data.items.length);
     displayEvents(data.items);
 }
 
@@ -50,6 +50,7 @@ function displayEvents(events) {
     events = filterEvents(events);
     events.sort(chronoSort);
     var eventViews = events.map(function (e) {
+        //console.log('test');
         var v = document.createElement('li');
         var dt = document.createElement('div');
         dt.classList.add('event-date');
@@ -68,14 +69,14 @@ function displayEvents(events) {
 }
 
 function filterEvents(events) {
-    console.log('filterEvents...');
+    //console.log('filterEvents...');
     var limit = Date.now() - 12 * 60 * 60 * 1000;
     return events.filter(function (e) {
         return e.start != undefined && e.start.dateTime != undefined;
     }).filter(function (e) {
         var start = Date.parse(e.start.dateTime);
         //console.log('start / now', start, now);
-        console.log(start, Date.now());
+        //console.log(start, Date.now());
         return start >= Date.now();
     });
 }
@@ -102,9 +103,8 @@ var CalLoader = function () {
         value: function load() {
             var _this = this;
 
-            console.log('url:', this.url);
             http('GET', this.url).then(function (value) {
-                //console.log('value:', value);
+                console.log('value:', value);
                 _this.data = JSON.parse(value);
                 _this.onData(_this.data);
             }, function (reason) {
