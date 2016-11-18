@@ -233,6 +233,10 @@ ol{
     width: 100%;
   }
 
+  .sommaire{
+    flex-direction: column;
+  }
+
 }
 
 /*
@@ -248,5 +252,10 @@ MEMOS
     display: flex;
     flex-direction: column;
     margin: 0 10px;
+  }
+
+  hr{
+    border-color: #eee;
+    margin: 14px 0;
   }
 }

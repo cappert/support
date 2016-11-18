@@ -14,9 +14,7 @@ permalink: /js/
         <a href="#les-commentaires">Les commentaires</a>
         <a href="#les-tableaux">Les tableaux</a>
         <a href="#fonctions-js">Fonctions JS</a>
-        <a href="#les-boucles">Les boucles</a>
-        <a href="#while">While</a>
-        <a href="#for">For</a>
+        <span><a href="#les-boucles">Les boucles</a> : <a href="#while">While</a>, <a href="#for">For</a></span>
         <a href="#scope-et-porte-de-variables">Scope et portée de variables</a>
         <a href="#objets">Objects</a>
         <a href="#objets-vs-tableaux">Objets Vs Tableaux</a>
@@ -43,7 +41,12 @@ permalink: /js/
         <a href="#arrayreduce">Array.reduce</a>
         <a href="#js-moderne">JS Moderne : NPM, Babel</a>
         <a href="#es6">ES6</a>
-        <a href="#react">React</a>
+        <a href="#react">Introduction à React</a>
+        <hr>
+        <a href="#corrections"><h4>Corrections</h4></a>
+        <a href="#outils"><h4>Outils</h4></a>
+        <a href="#Annexes"><h4>Ressources</h4></a>
+        <a href="#ressources"><h4>Annexes</h4></a>
     </div>
 </div>
 
