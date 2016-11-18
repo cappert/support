@@ -57,7 +57,7 @@ Dans le cas d'un ordinateur, on utilisera :
 - un *langage* informatique
 - ou une interface graphique
 
-### Type de données
+### Types de données
 
 La programmation permet de manipuler des données de différents types.
 
