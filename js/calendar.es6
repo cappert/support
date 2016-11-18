@@ -29,7 +29,6 @@ function http(method, url, data) {
     )
 }
 
-
 function parseDateTime(t) {
     let dt = t.split('T');
     let day = dt[0].split('-');
@@ -43,13 +42,12 @@ function stringToDate(t){
     let day = dt[0].split('-');
     day[1] = day[1] - 1; // js month index
     let tm = dt[1].split('+')[0].split(':');
-    //console.log([...day, ...time]);
     return new Date(...day, ...tm);
 }
 
 class CalendarWidget {
     constructor(src, targetElement) {
-        console.log('CalendarWidget...');
+        //console.log('CalendarWidget...');
         this.targetElement = targetElement;
         this.model = new EventModel();
         let loader = new CalLoader(src, this.onCalData.bind(this), true);
@@ -80,8 +78,6 @@ class CalendarView{
             dt.classList.add('event-date');
             let dateFormatOptions = {weekdays:'short', day:'numeric', month:'2-digit', year:'2-digit', hour:'numeric',minute:'numeric', };
             dt.innerText = stringToDate(e.start.dateTime).toLocaleString('fr-FR', dateFormatOptions);
-            //dt.innerText = parseDateTime(e.start.dateTime);
-            console.log( 'stringToDate', e.start.dateTime, stringToDate(e.start.dateTime) );
             v.appendChild(dt);
             var titre = document.createElement('div');
             titre.innerText = e.summary;
