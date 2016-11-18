@@ -1203,7 +1203,7 @@ var prixHT = [ 12.00, 9.99, 9.10, 2.40 ];
 
 var prixTTC = prixHT.map(function(prx) {return  prx * tauxTVA; })
 .filter((function(prx) {return prx > 10;} )
-.map((function(prx) {return prx + ' €';});
+.map(function(prx) {return prx + ' €';});
 
 console.log('prixHT', prixHT);
 
