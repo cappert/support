@@ -49,6 +49,7 @@ function displayEvents(events) {
     //console.log('sorted',events);
     events = filterEvents(events);
     events.sort(chronoSort);
+    console.log(events);
     var eventViews = events.map(function (e) {
         //console.log('test');
         var v = document.createElement('li');
@@ -63,9 +64,10 @@ function displayEvents(events) {
     });
 
     //console.log('displayEvents...', eventViews.length);
-    _.first(eventViews, 5).forEach(function (v) {
+    _.first(eventViews, 8).forEach(function (v) {
         return view.appendChild(v);
     });
+    //eventViews.forEach(v =>view.appendChild(v));
 }
 
 function filterEvents(events) {
@@ -77,15 +79,15 @@ function filterEvents(events) {
         var start = Date.parse(e.start.dateTime);
         //console.log('start / now', start, now);
         //console.log(start, Date.now());
-        return start >= Date.now();
+        return start >= limit;
     });
 }
 
 function chronoSort(a, b) {
     if (!a || !b) return 0;
     if (a.start != undefined && a.start.dateTime != undefined && b.start != undefined && a.start.dateTime != undefined) {
-        if (parseDate(a.start.dateTime) < parseDate(b.start.dateTime)) return -1;
-        if (parseDate(a.start.dateTime) > parseDate(b.start.dateTime)) return 1;
+        if (Date.parse(a.start.dateTime) < Date.parse(b.start.dateTime)) return -1;
+        if (Date.parse(a.start.dateTime) > Date.parse(b.start.dateTime)) return 1;
     }
     return 0;
 }
