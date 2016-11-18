@@ -7,8 +7,22 @@ layout: default
     <div id="divider">
 
         <div>
+            <div class="last">
+                <span class="post-meta">{{ site.posts[0].date | date: "%-d %b, %Y" }}</span>
+
+                <section>
+                    <h2>
+                        <a class="post-link" href="{{ site.posts[0].url | prepend: site.baseurl }}">{{ site.posts[0].title }}</a>
+                    </h2>
+                    <p>{{site.posts[0].excerpt}}</p>
+                </section>
+            </div>
+
+            {% assign posts = site.posts | shift %}
+
             <ul class="post-list">
-                {% for post in site.posts %}
+
+                {% for post in posts %}
                 <li>
                     <span class="post-meta">{{ post.date | date: "%-d %b, %Y" }}</span>
 

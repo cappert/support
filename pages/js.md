@@ -1,23 +1,68 @@
 ---
 layout: page
-title: Javascript
+title: Programmation Javascript
 permalink: /js/
 ---
 
-
-## La programmation
+<div class="sommaire">
+    <div class="sommaire-col">
+        <h2>Intro</h2>
+        <a href="#type-de-donnes">Types de données</a>
+        <a href="#des-instructions">Des instructions</a>
+        <a href="#conditions">Les conditions</a>
+        <a href="#comparaison-et-conditions">Comparaisons et condition</a>
+        <a href="#les-commentaires">Les commentaires</a>
+        <a href="#les-tableaux">Les tableaux</a>
+        <a href="#fonctions-js">Fonctions JS</a>
+        <a href="#les-boucles">Les boucles</a>
+        <a href="#while">While</a>
+        <a href="#for">For</a>
+        <a href="#scope-et-porte-de-variables">Scope et portée de variables</a>
+        <a href="#objets">Objects</a>
+        <a href="#objets-vs-tableaux">Objets Vs Tableaux</a>
+        <a href="#les-dates">Les dates</a>
+    </div>
+    <div class="sommaire-col">
+        <h2>Débutant</h2>
+        <a href="#html-et-js--manipulation-du-dom">HTML & JS : Manipulation du DOM</a>
+        <a href="#introduction-aux-venements">Evénements DOM</a>
+        <a href="#window">Window</a>
+        <a href="#document">Document</a>
+        <a href="#formulaires">Formulaires</a>
+        <a href="#html-dynamique">HTML dynamique</a>
+        <a href="#objets-js">Objets JS</a>
+        <a href="#jquery">JQuery</a>
+        <a href="#js-pourquoi-faire">JS pourquoi faire</a>
+        <a href="#modele-venementiel">Modele évenementiel</a>
+        <a href="#data---attributes">Data-attributes</a>
+        <a href="#ajax">Ajax</a>
+    </div>
+    <div class="sommaire-col">
+        <h2>Intermédiaire</h2>
+        <a href="#arraymap-et-arrayfilter">Array.Map et Array.Filter</a>
+        <a href="#arrayreduce">Array.reduce</a>
+        <a href="#js-moderne">JS Moderne : NPM, Babel</a>
+        <a href="#es6">ES6</a>
+        <a href="#react">React</a>
+    </div>
+</div>
 
 Programmer c'est donner une série d'instructions à un ordinateur (ou autre chose : un réveil, un four, un robot...).
-Dans le cas d'un ordinateur, on pourra utiliser :
-- un *langage* informatique "compris, interpreté et executé"
-- une interface graphique
 
-## Type de données simples
-- valeurs numériques : 1, 178, 25.8
-- texte » "hola", "Robert", "je suis content"...
-- booléens : true ou false » valeurs qui ne peuvent être que 'vraie' ou 'fausse'
+Dans le cas d'un ordinateur, on utilisera :
 
-## Instructions navigateur / Fonctions
+- un *langage* informatique
+- ou une interface graphique
+
+### Type de données
+
+La programmation permet de manipuler des données de différents types.
+
+- des valeurs numériques : 1, 178, 25.8
+- du texte » "hola", "Robert", "je suis content"...
+- des booléens *vrai* ou *faux* : true ou false » valeurs qui ne peuvent être que 'vraie' ou 'fausse'
+
+### Des instructions
 
 - `console.log("un texte")` » permet d'afficher un message dans la console du navigateur, outil pratique pendant le développement pour s'assurer que tout fonctionne comme prévu
 
@@ -33,12 +78,13 @@ console.log(message, "tout","le","monde");
 - `confirm('un question fermée ?')` » permet de récupérer un choix saisi par l'utilisateur
 
 ```javascript
-var reponseQuestion1 = prompt('');
+var reponseQuestion1 = prompt('Quel âge avez vous ?');
 ```
 
-## Conditions
+### Conditions
 
-en francais :
+En francais :
+
 si ( uneConditionEstVrai ){
     //execute cette/ces instructions
 } sinon {
@@ -55,9 +101,20 @@ if( age >= 18 ) {
 
 On peut ajouter plus de vérifications, pour gérer par exemple
 
-## :golf: Défis
 
-### :computer: Devinettes
+### Comparaison et conditions
+
+- inégalité `!=` ou `!==`
+
+- comparaisons > >= < <=
+
+- Opérateurs logiques
+	+ ET && `(age > 18) && (age < 65)`
+	+ OU ||`(age < 18) || (age > 65)`
+
+### :golf: Défis
+
+#### :computer: Devinettes
 
 Ecrire un script/programme qui demande :
 
@@ -69,14 +126,14 @@ Ecrire un script/programme qui demande :
 
 » [Correction](https://github.com/simplyon2/exemples/blob/master/4-intro-js/chevalblanc.html)
 
-### :computer: Devine un chiffre
+#### :computer: Devine un chiffre
 
 Écrire un script/programme qui demande de deviner un chiffre **tiré au hasard** entre 0 et 9 ( 2 tentatives autorisées )
 
 » [Correction](https://github.com/simplyon2/exemples/blob/master/4-intro-js/2-devine-un-chiffre.html)
 
 
-### :computer: Dessiner c'est gagner
+#### :computer: Dessiner c'est gagner
 
 [Ardoise magique](http://rxlabz.com/simplon/ardoise/index.html)
 
@@ -103,7 +160,7 @@ Ils peuvent être utiles pour d'autres développeurs ayant à manipuler notre co
 ```
 ___
 
-### Types de données (suite) : Les tableaux
+### Les tableaux
 
 Les tableaux (ou listes) : `Array` permettent de stocker plusieurs élements dans une même variable/entité.
 
@@ -125,27 +182,34 @@ console.log( '1er prenom', prenoms[0])
 - ajouter un élement : `monTableau.push( nouvelElement );`
 - récupérer le nombre d'élements : `var nombreElements = monTableau.length;`
 
-#### Des fonctions propres aux différents types de données
+### Fonctions js
 
-- Texte / Chaines de caractères : [String](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/String)
+Les différents type d'objets que nous avons utilisés offrent de nombreuses fonctions/opérations. 
+
+- **les fonctions textuelles** : [String](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/String)
   - toLowerCase()
   - split(...)
   - indexOf(...)
+  - ...
 
-- Tableaux/Listes : [Array](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Array)
-  - join
+- **Les fonctions de tableaux** : [Array](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Array)
+  - join()
   - pop()
   - filter(...)
+  - ...
 
-- Valeur numérique : [Number](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Number)
+- **Fonctions de valeurs numériques** : [Number](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Number)
+
+- **Fonctions mathématiques** : [Math](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Math)
 
 ### Les boucles
+
 Les boucles permettent d'exécuter une même suite d'instructions plusieurs fois :
 - tant qu'une condition est vrai : `while...` et `do{}while(...)`
 - en fonction d'un(e) suite/liste/tableau d'élements : `for`
 
-#### While : "tant que"
-___
+#### While
+
 Tant qu'une condition est vraie » exécute ces instructions
 
 ```
@@ -176,7 +240,9 @@ do {
 ```
 ___
 
-#### For : pour tous les eléments d'un tableaux
+#### For
+
+Pour tous les eléments d'un tableaux
 
 ```javascript
 var prenoms = [ "Bob", "Luc", "Léa", "Ann" ];
@@ -225,18 +291,7 @@ Ecrire un programme qui demande :
 
 :bulb: [switch](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Instructions/switch)
 
-### Comparaison et conditions (suite)
-
-- inégalité `!=` ou `!==`
-
-- comparaisons > >= < <=
-
-- Opérateurs logiques
-	+ ET && `(age > 18) && (age < 65)`
-	+ OU ||`(age < 18) || (age > 65)`
-
-
-#### Fonctions
+### Fonctions
 
 Une fonction est une liste d'instructions
 
@@ -370,7 +425,7 @@ Après 3 calculs réussis sans erreur, le programme tire au sort **2 opérations
 + si l'utilisateur accepte, le programme stocke le nouveau mail, demande un mot de passe et le stocke aussi
 
 
-#### Scope / Portée de variable
+#### Scope et Portée de variables
 
 Si une variable est déclarée en dehors de toute fonction, elle est *globale*. Tous les scripts de la page peuvent y accéder.
 Si elle est déclarée dans une fonction, elle n'existe que dans le bloc de la fonction.
@@ -390,73 +445,7 @@ console.log('r2',reponse2); // reponse2 n'existe que dans le contexte de la fonc
 
 ```
 
-
-### Fonctions
-
-Une fonction est une liste d'instructions
-
-
-```javascript
-function terminePartie(){
-    stopMinuteur();
-    enregistreScore();
-    alert('vous avez gagné');
-}
-```
-
-Certaines fonctions renvoient un résultat.
-
-```javascript
-function tableauEnMinuscule(noms){
-    var nomsMinuscule = [];
-	for(var i = 0; i < noms.length; i ++){
-	    nomsMinuscule.push(noms[i].toLowerCase());
-	}
-	return nomsMinuscule;
-}
-```
-
-**Paramétres de Fonctions**
-
-Une fonction peut avoir besoin d'informations, "d'ingrédients", pour pouvoir fonctionner.
-
-```javascript
-
-// cette fonction attend 2 paramètres
-function addition(valeur1 , valeur2){
-	var resultat = valeur1 + valeur2;
-	console.log(valeur1, '+', valeur2 , ' = ' , resultat ); // console.log un nombre indéfini de paramètres
-	
-	return resultat;
-}
-```
-
-- [**Exemple calculMoyenne(notes)**](http://jsbin.com/gavizud/1/edit?js)
-
-Par défaut, le javascript n'est pas très strict, une fonction ne déclarant pas d paramètres peut quand même en recevoir et les "traiter"
-
-```javascript
-// fonction avec paramètres indéterminés
-// ça marche mais ce n'est pas très lisible/intuitif
-function addition2(){
-    /*
-        les paramètres sont accessibles via une variable arguments
-        » c'est un tableau contenant les paramètres utilisés
-     */
-    console.log('nombre d\'arguments',  arguments.length);
-    total = 0;
-    for( var index in arguments){
-        if( ! isNaN( arguments[index] ) )
-            total += arguments[index];
-    }
-}
-```
-
-Si une fonction ne modifie rien au contexte d'éxecution, elle est appellé "fonction pure".
-
-:book: [Les fonctions :fr:](http://fr.eloquentjavascript.net/chapter3.html)
-
-### Objets {}
+### Objets
 
 Les Objets permettent de créer des *entités* possédant des propriétés nommées.
 Chaque propriété peut contenir n'importe quelle sorte de données ( chaines de caractères, nombres, tableaux, object ...).
@@ -486,7 +475,7 @@ for( var propriete in utilisateur){
 }
 ```
 
-### Exemple 
+#### Exemple 
 
 Pour l'exercice login/password v2 & v3, il était possible de stocker les logins et passwords dans 2 tableaux distincts.  
 
@@ -532,7 +521,7 @@ for(var propriete in compte3){
 }
 ```
 
-### JS : Objets Vs Tableaux
+### Objets Vs Tableaux
 
 - les tableaux ont par défaut certaines propriétés et fonctions pratiques : `.length` , ` .push() `, `.slice()` ...
 => un tableau [] est la meilleure option pour stocker une liste d'élements "comparables"
@@ -540,7 +529,7 @@ for(var propriete in compte3){
 - un objet a des propriétés plus facilement mémorisable. Il peut représenter une entité clairement définie
 => un objet {} est plus adapté à un stockage d'information représentant une seule et même "entité".
 
-### JS Tools : Debuguer dans le navigateur
+### Débuguer dans le navigateur
 
 - console
 - points d'arrêts
@@ -605,18 +594,20 @@ console.log( calculMoyenneClasse(eleves) ); // renvoie 12.33 (2 chiffres après 
 ( un prompt s'ouvre et demande  "1 pierre, 2 ciseau, 3 feuille, 4 puit "?)
 
 
-### JS : d'autres types de données
+### Les Dates
 
-- [Date](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Date)
+Cf [Date](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Date)
 
 ```javascript
 var maintenant = new Date();
 var unJour = new Date( 2016,7,12);
 
-Date.now();
+console.log(Date.now()); // nombre de milliseconds écoulées depuis 1/1/1970
 ```
 
-### HTML & JS : Manipulation du DOM
+## Débutants
+
+### HTML et JS : Manipulation du DOM
 
 Durant ces premières semaines nous nous sommes concentrés sur une initiation à la "logique de la programmation".
  
@@ -635,7 +626,7 @@ Cette représentation offre une **API** / interface de programmation  - Applicat
 
 [What is the DOM?](https://css-tricks.com/dom/)
 
-#### Evénements : introduction
+### introduction aux évenements
 
 On peut déclarer des évènements sur les élements HTML pour surveiller les interactions ou d'autres types d'évènements.
 
@@ -644,16 +635,40 @@ On peut déclarer des évènements sur les élements HTML pour surveiller les in
 <button type="button" onclick="appelleUneAutreFonction('coucou')">Cliquez moi aussi</button>
 ```
 
-#### [**window**](https://developer.mozilla.org/fr/docs/Web/API/Window)
+En JS 
+
+```javascript
+
+// element.addEventListener(typeEvent, fonctionEcouteur);
+
+function fonctionEcouteur(e){
+    console.log('event recu', e);
+}
+
+
+element.addEventListener('click', function(e){
+    console.log('click');
+});
+
+// OU
+
+```
+
+### Window
+
+[Référence de l'objet Window](https://developer.mozilla.org/fr/docs/Web/API/Window)
 
 - représentation de la fenêtre du navigateur => taille, position du scroll, infos sur l'écran...
 
-#### [**document**](https://developer.mozilla.org/fr/docs/Web/API/Document)
+### Document
+ 
+[référence de l'objet Document](https://developer.mozilla.org/fr/docs/Web/API/Document)
 
 - abstraction du document actuellement affiché dans le navigateur
-  - recherche et ajout d'éléments
+- recherche et ajout d'éléments
+- ...
 
-#### Formulaires
+### Formulaires
 
 - on peut récupérer les données d'un élements de formulaire via `.value`
 
@@ -661,7 +676,7 @@ On peut déclarer des évènements sur les élements HTML pour surveiller les in
 var champ = document.getElementById('unChamp').value;
 ```
 
-#### Récupérer des élements dans une page :
+### Récupérer des élements dans une page :
  
 - via un **id UNIQUE** => document.getElementById("entete") » permet de récupérer une collection/tableau d'objet HTML
 
@@ -669,7 +684,7 @@ var champ = document.getElementById('unChamp').value;
 
 - liste d'élements via **leur tag**=> `document.getElementsByTagName("TagType")`
 
-#### Créer du HTML 'dynamiquement'
+### HTML dynamique
 
 - créer un élement / node => document.createElement('tagElement')
 
@@ -723,6 +738,7 @@ boite.classList.remove('actif');
 - [Masquer/afficher des élements](http://jsbin.com/fakomax/1/edit?html,js,output) » comme le précédent, mais quand un bloc est cliqué tous les autres sont affichés.
 
 ### Même logique, autre aspect
+
 Refaire les 1ers exercices JS en utilisant du HTML à la place des prompt/alert
   
 - **Henri 5**
@@ -735,9 +751,6 @@ Refaire les 1ers exercices JS en utilisant du HTML à la place des prompt/alert
 
 - **Login / password**
 
-### (pour le 05/09)
-
-Au choix
 
 #### :computer: Memo 
 ![memo_Game](https://camo.githubusercontent.com/f85a7fa4854d7c98f5ea837ca22ed6aaeffd9a2b/68747470733a2f2f7777772e657665726e6f74652e636f6d2f6c2f4141463164654c30664e424938354d574a615a48494c376430334c6379434f456b6e6b422f696d6167652e706e67)
@@ -780,7 +793,7 @@ Créer une page web affichant l'heure et/ou la date
 </html>
 ```
 
-### JS Object - part 2
+### Objets JS
 
 Il est possible de définir des propriétés contenant des fonctions. Les objets peuvent ainsi contenir à la fois des informations, et des "savoir faire", définis dans des fonctions.
 Lorsqu'une fonction est définie dans un objet, on l'appelle une "méthode" de l'objet.  
@@ -798,7 +811,7 @@ Lorsqu'une fonction est définie dans un objet, on l'appelle une "méthode" de l
  - [intro POO MDN](https://developer.mozilla.org/fr/docs/Web/JavaScript/Introduction_à_JavaScript_orienté_objet)
  - [guide POO JS MDN](https://developer.mozilla.org/fr/docs/Web/JavaScript/Guide/Le_modèle_objet_JavaScript_en_détails)
 
-## J4
+#### Exemples
 
 - [couleur aléatoire v1](http://jsbin.com/jejetij/3/edit?html,js,output)
 - [couleur aléatoire v2 - constructeur](http://jsbin.com/ruqavi/edit?js)
@@ -831,7 +844,7 @@ Créez un objet gestionnaireContact qui contient :
 
 ![wat](https://media3.giphy.com/media/UnTC9o2HMyUta/200.gif)
 
-## Consolidation
+### Consolidation
 
 - DOM
   - manipulation : 
@@ -847,17 +860,6 @@ Créez un objet gestionnaireContact qui contient :
 - Objets
 
 [Exemples](https://gist.github.com/rxlabz/fe4349d7ada0b26ea7f550a3c4b793af)
-
-
-### Ajout d'écouteur d'évenements
-
-```javascript
-//element.addEventListener(typeEvent, fonctionEcouteur);
-element.addEventListener('click', function(e){
-    console.log('click');
-});
-```
-
 
 ### JQuery
 
@@ -878,7 +880,7 @@ C'est une librairie qui facilite certaines fonctionnalités JS ( manipulation DO
 - masquer / afficher un élément HTML
 
 
-### Javascript pourquoi et comment faire :
+### JS pourquoi faire
 
 - des sites web animés et interactifs => [CreateJS](http://www.createjs.com) : multimedia / [GreenSock](https://greensock.com/gsap) : animation / [velocity.js](http://velocityjs.org)
   - <a href="http://www.rxlabz.com/labz/anims/4p_rect_libs.html" target="_blank">Exemple animation SVG avec Velocity.js</a>
@@ -889,7 +891,7 @@ C'est une librairie qui facilite certaines fonctionnalités JS ( manipulation DO
 - des serveurs ou des applications en lignes de commande => [NodeJS](https://nodejs.org/en/)
 - des applications de bureau => Exemple Atom => développé avec [Electron](http://electron.atom.io)
 
-### JS : Les évenements
+### Modele évenementiel
 
 Un événement est un signal indiquant que quelque chose s'est passé dans la page HTML, par exemple que l'utilisateur a interagi avec un élément.
 
@@ -984,7 +986,7 @@ Les évenements personnalisés permettent de créer ses propres évenements, et 
 - [Créer et émettre des évenements](https://developer.mozilla.org/en-US/docs/Web/Guide/Events/Creating_and_triggering_events)
 - [Cross-browser custom events](tjrus.com/blog/custom-javascript-events)
 
-### HTML / JS : Data-* attributes
+### Data-* attributes
 permet de stocker des informations textuelles annexes dans les tags html
 
 ```html
@@ -996,7 +998,7 @@ permet de stocker des informations textuelles annexes dans les tags html
 <div/>
 ```
 
-### Utilisation en JS
+#### Utilisation en JS
 
 Pour accéder à ces attributs en JS :
 - `element.setAttribute('data-author-id', 142);`
@@ -1153,14 +1155,220 @@ requete.open("get", "users.txt", true);
 requete.send();
 ```
 
-### [Exemple Ajax](https://gist.github.com/rxlabz/e62254f9436cbc902e1e52708826ca3d)
+- [Exemple Ajax](https://gist.github.com/rxlabz/e62254f9436cbc902e1e52708826ca3d)
+- [Exemples Ajax - chargements .txt, .json, .csv](https://github.com/simplyon2/exemples-php/tree/master/ajax/chargements)
+- [Exemples Ajax/PHP » GET & POST](https://github.com/simplyon2/exemples-php/tree/master/ajax/post)
 
-### [Ajax & jquery](https://learn.jquery.com/ajax/)
+#### creuser la question
+
+- [ajax - openClassroom](https://openclassrooms.com/courses/dynamisez-vos-sites-web-avec-javascript/xmlhttprequest-1)
+- [Utiliser XMLHTTPRequest - MDN](https://developer.mozilla.org/fr/docs/Web/API/XMLHttpRequest/Utiliser_XMLHttpRequest#Envoyer_des_formulaires_et_uploader_des_fichiers)
+- [ajax jquery - openClassroom](https://openclassrooms.com/courses/un-site-web-dynamique-avec-jquery/ajax-les-requetes-http-par-l-objet-xmlhttprequest)
+
+#### [Ajax & jquery](https://learn.jquery.com/ajax/)
 
 ### Consolidation JS
 
-- [exemple img](https://gist.github.com/rxlabz/a43eca7391a168cada282d2880353a59)
-- [exemple DOM dynamique](https://gist.github.com/rxlabz/95fd8561ede0f370fc0b45097bad581e)
+- DOM et JSON » [exemple img](https://gist.github.com/rxlabz/a43eca7391a168cada282d2880353a59)
+- DOM » [exemple DOM dynamique](https://gist.github.com/rxlabz/95fd8561ede0f370fc0b45097bad581e)
+
+## Intermédiaires
+
+### Array.Map et Array.Filter
+
+Il existe quelques méthodes alternatives pour parcourir un tableau :
+
+- map : permet de prendre un tableau, et de créer un nouveau tableau en appliquant une transformation à chaque élément du tableau. La transformation est définie par une fonction passée en paramètre
+
+```javascript
+var valeurs = [1,2,3];
+var double = valeurs.map(function(valeur){ return valeur * 2 });
+```
+
+- filter : permet de prendre un tableau, et d'en filtrer les éléments
+
+```javascript
+var ages = [12,22,30];
+var majeurs = ages.filter(function(valeur){ return valeur >= 18 });
+```
+ 
+```javascript
+const tauxTVA = 1.2;
+
+var prixHT = [ 12.00, 9.99, 9.10, 2.40 ];
+
+
+var prixTTC = prixHT.map(function(prx) {return  prx * tauxTVA; })
+.filter((function(prx) {return prx > 10;} )
+.map((function(prx) {return prx + ' €';});
+
+console.log('prixHT', prixHT);
+
+console.log('prixTTC', prixTTC);
+
+/*
+var prixTTC = prixHT.map(prx => prx * tauxTVA)
+.filter(prx => prx > 10 )
+.map(prx => prx + ' €');
+*/
+console.log('prixHT', prixHT);
+
+console.log('prixTTC', prixTTC);
+``` 
+
+Même exemple avec des objets :
+
+```javascript
+const tauxTVA = 1.2;
+
+var panier = {
+   produits:[
+     { nom:'Tee-shirt', prix:12.00},
+     { nom:'Chaussettes', prix:9.00},
+     { nom:'Echarpe', prix:10.00},
+     { nom:'Lacets', prix:2.00}
+   ]
+};
+
+// prix [ 12.0, 9.0, 10.0, 2.0 ]
+
+/* 1.transforme un tableau de produits en un tableau de prix
+* 2. les prixHT en prix TTC
+* 3. filtre les prix supérieur à 10
+* 4. concatène la devise
+* */
+var prixTTC = panier.produits.map( function(produit){ return produit.prix; } ) 
+.map(function(prx){return prx * tauxTVA; }) /* res = [12*1.2, 9.99 * 1.2 , 9.10 * 1.2, 2.40 * 1.2]*/
+.filter(function(prx) {return prx > 10;} ) /* [12*1.2 , 9.99 * 1.2 , 9.10 * 1.2] */
+.map(function(prx) {return prx + ' €';}); 
+
+     
+console.log(prixTTC);
+```
+
+
+### Array.reduce
+
+La fonction **reduce** permet de cumuler un résultat en parcourant un tableau.
+ 
+Exemple : calculer la somme des notes d'un tableau.
+
+- [Exemples map/filter/reduce ( total prix et prix minimum )](http://jsbin.com/fudoqayare/edit?js,console)
+
+
+### JS "Moderne"
+
+#### npm : Node Package Manager
+
+NPM permet principalement de : 
+
+- gérer les dépendances
+- définir des script pour l'automatisation de la construction/compilation/préparation d'un projet JS
+
+Un fichier *package.json* définit la configuration npm du projet.
+- meta-données
+- dependencies : liste des lib utilisées dans le projet
+- devDependencies : liste des libs/outils utilisés pour le dev
+- scripts : scripts shell
+
+- `npm init -y` créé un fichier de config ( -y » force les valeurs par défaut)
+- `npm install` installe les dépendances décrites dans le fichier de config
+- `npm run nomScript` execute un script déclaré dans le fichier package.json
+
+#### Ecmascript ES6 / ES2015
+
++ [BabelJS](http://babeljs.io) : transforme votre code es2015 en code es5 ( javascript "normal" )
++ [Learn ES2015](http://babeljs.io/docs/learn-es2015/)
++ [Essayer ES2015](http://babeljs.io/repl/)
++ [Babel CLI](https://babeljs.io/docs/usage/cli/)
+
++ [ES6 Essentials](http://www.2ality.com/2015/08/getting-started-es6.html)
+
+#### Installation *babel-cli*
+
+**CLI** : Command Line Interpreter » application shell
+
+```bash
+# initialisation du projet npm
+npm init -y
+
+# install de babel + config es2015 & sauvegarde dans les dev-dependencies 
+sudo npm install babel-cli babel-preset-es2015 --save-dev
+
+# création et remplissage d'un fichier de configuration *.babelrc*
+echo '{ "presets": ["es2015"] }' > .babelrc
+
+# démarrage de la transpilation/compilation automatique
+./node_modules/.bin/babel script.es6 --watch --out-file script.js
+```
++ initialisation de npm
++ installation de babel et de la config de transpilation par défaut
++ création du fichier de config de babel .babelrc
++ ajout du preset es2015 ds .babelrc
++ lancement de la surveillance du fichier script.es6
+
+### ES6
+
+[Exemple des nouvelles syntaxes : class, =>, map/filter/reduce,...](https://github.com/Simplon-lyon/mini-intro-es2015)
+
+- classes
+  - constructor
+  - héritage via extends
+  - méthodes et get / set
+- fonctions fléchées
+- fonctions : valeur par défaut de paramètres / liste indéfinis de paramètres
+- templates
+- object literals
+- destructuration
+- ...
+
+[ :tv: intro es6/es2015 :fr:](https://www.youtube.com/watch?v=uL9uAAzkFmI)
+
+#### Lectures : Putain de code » articles :fr: sur es6
+
++ [les classes](http://putaindecode.io/fr/articles/js/es2015/classes/)
++ [var, let et const](http://putaindecode.io/fr/articles/js/es2015/const-let-var/)
++ [les fonctions fléchées](http://putaindecode.io/fr/articles/js/es2015/arrow-functions/)
++ [string templates](http://putaindecode.io/fr/articles/js/es2015/template-strings/)
++ [Fonctions fléchées](http://putaindecode.io/fr/articles/js/es2015/arrow-functions/)
++ [objet literals](http://putaindecode.io/fr/articles/js/es2015/object-literals/)
++ [nouvelles méthodes d'array](http://putaindecode.io/fr/articles/js/es2015/array-methods-addition/)
++ [Maps et LeakMaps](http://putaindecode.io/fr/articles/js/es2015/maps-weakmaps/)
++ [paramètres rest et opérateur spread](http://putaindecode.io/fr/articles/js/es2015/rest-spread/)
+
+#### La bible de l'ES6 :us:
+
++ [Exploring ES6](http://exploringjs.com/es6/)
++ [classes](http://www.2ality.com/2015/02/es6-classes-final.html)
++ [modules](http://www.2ality.com/2014/09/es6-modules-final.html)
++ [tableaux](http://www.2ality.com/2014/05/es6-array-methods.html)
+
+### Etude de cas : Application ES6
+
+» [Prototype "Client" kta1](https://github.com/rxlabz/kta1-poc/blob/master/public/app.es6)
+
+### React 
+
+[Documentation React](https://facebook.github.io/react/)
+
+Librairie de création de composants pour le web ( cf. React Native pour mobile )
+
+- React.createClass » crée un composant React
+  - composant.render() » renvoie le html (jsx) de représentation du compo
+
+  - composant.props : informations injectées depuis l'extérieur
+  - composant.state : information que le composant manipule, gère, modifie....
+
+  - évenements et appel de méthodes "internes" du composant
+
+  - cycle de vie :
+    - componentDidMount : appelé qd le compo a été affiché
+    - componentWillUnmount : appelé qd le compo va être supprimé
+    - ...
+
++ [Exemple React : panier ](https://github.com/Simplon-lyon/intro-react-jsx) ( sans config :cold_sweat: )
++ [Tutoriel](https://facebook.github.io/react/docs/tutorial.html)
++ [Animation](https://facebook.github.io/react/docs/animation.html)
 
 
 ## Corrections
