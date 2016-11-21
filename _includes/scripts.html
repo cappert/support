@@ -4,15 +4,6 @@
 <!--<script type="text/javascript" src="{{'/js/calendar.js' | prepend: site.baseurl}}"></script>-->
 <script type="text/javascript" src="{{'/js/prism.js' | prepend: site.baseurl}}"></script>
 <script>
-
-    if( 'serviceWorker' in navigator ){
-        navigator.serviceWorker.register('./js/calendar.js').then(function(registration){
-            console.log('sw ok');
-        }).catch(function(err){
-            console.log('SW Error : ', err);
-        })
-    }
-
     /*if (document.getElementById('calendar')) {
         var widget = new CalendarWidget(CAL_URL, document.getElementById('calendarList') );
     }*/
