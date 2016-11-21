@@ -59,7 +59,27 @@ class CalendarWidget {
     }
 }
 
+class CalLoader {
 
+    constructor(url, onData, autoLoad) {
+        this.url = url;
+        this.onData = onData;
+
+        if (autoLoad)
+            this.load();
+    }
+
+    load() {
+        http('GET', this.url).then(
+            value=> {
+                //console.log('value:', value);
+                this.data = JSON.parse(value);
+                this.onData(this.data);
+            },
+            reason=>console.log('reason:', reason)
+        );
+    }
+}
 
 class CalendarView{
 
@@ -121,27 +141,6 @@ class EventModel {
     }
 }
 
-class CalLoader {
-
-    constructor(url, onData, autoLoad) {
-        this.url = url;
-        this.onData = onData;
-
-        if (autoLoad)
-            this.load();
-    }
-
-    load() {
-        http('GET', this.url).then(
-            value=> {
-                //console.log('value:', value);
-                this.data = JSON.parse(value);
-                this.onData(this.data);
-            },
-            reason=>console.log('reason:', reason)
-        );
-    }
-}
 
 if (document.getElementById('calendar')) {
     let widget = new CalendarWidget(CAL_URL, document.getElementById('calendarList') );
