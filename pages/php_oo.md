@@ -5,6 +5,10 @@
 ```php
 
 $tablo = [];
+$tablo[0] = "Paul";
+$tablo[1] = "Martin";
+
+$tablo = [];
 $tablo['nom'] = "Paul";
 $tablo['prenom'] = "Martin";
 
