@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Introduction Dart : ressources
+title: Introduction Dart ressources
 permalink: /dart_docs/
 ---
 
