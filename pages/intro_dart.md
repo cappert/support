@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Introduction Dart ressources
-permalink: /dart_docs/
+permalink: /dart-docs/
 ---
 
 [Exemples de codes simples](https://www.dartlang.org/samples)
