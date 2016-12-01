@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Introduction Dart : ressources
-permalink: /intro_Dart/
+permalink: /intro_dart/
 excerpt_separator: <!--more-->
 ---
 
