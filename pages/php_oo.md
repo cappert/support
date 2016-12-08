@@ -1,3 +1,10 @@
+---
+layout: page
+title: phpoo
+permalink: /phpoo/
+excerpt_separator: <!--more-->
+---
+
 # PHP orienté Objet
 
 ## PHP : Tableau associatif / Objet stdClass
@@ -239,7 +246,7 @@ abstract class ObjectManager{
 }
 ```
 
-#### Erratums
+#### Notes
 
 - Il est possible de passer des functions en paramètre de fonctions - [Exemples](exemples/fonction_anonymes.php)
 
