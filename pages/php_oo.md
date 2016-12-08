@@ -31,28 +31,34 @@ $objet->prenom = "Henri";
 ## Définir des classes d'Objet
 
 #### Classes
+
 Définition de la structure et du fonctionnement d'une entité, à laquelle on attribue un **type**
 Les classes permettent de représenter des entités conçues pour notre application / librairie.
 
 Exemples : 
+
 - données : au plus simple un base de données contenant un table
 - Jeu : Si je développe un jeu type Space Invaders, différents types d'entités seront utilisées
   - quels entitées ?
 
 [méthodes magiques](http://php.net/manual/fr/language.oop5.overloading.php)
+
   - constructeur : __construct : que lui faut-il , que se passe t il, quand une *instance* est créée
   - __destruct : que se passe t il quand une *instance* est détruite
   - __toString() : renvoie la description textuelle de l'instance ( debug )
 
 #### Propriétés / Attributs
+
 - visiblité : public, protected
-  - informations contenues / exposées par une instance ou par une classe ( static )
+- informations contenues / exposées par une instance ou par une classe ( static )
 
 
 #### Méthodes / Fonctions
+
 Une *méthode* est une fonction définie dans une classe.
 En POO, elles représentent en quelque sorte les "actions" que peut effectuer une entité.
 Là aussi, ce posera la question de la visibilité; les méthodes peuvent être :
+
 - **public**, et être appelées/utilisées depuis *l'extérieur* ()
 - ou  **private**, et n'être utilisées qu'au sein de la classe elle-même
 - ou  encore **protected**, et dans ce cas être accessible depuis la classe et ses "descendantes"
@@ -60,6 +66,7 @@ Là aussi, ce posera la question de la visibilité; les méthodes peuvent être 
 Les méthodes peuvent également être **static**,
 
 #### [Méthodes de surcharge magique](http://php.net/manual/fr/language.oop5.overloading.php)
+
 PHP offre des méthodes pour gérer l'accès à des proprietés non définies dans la structure de la classe
 - __set / __get : gestion de proprietés indéfinies
 - __isset : vérification de l'existance de proprietés indéfinies
@@ -202,8 +209,6 @@ class Voyageur{
 }
 
 ```
-
-
 
 #### Interface
 
@@ -375,5 +380,5 @@ res de méthodes/fonctions, mais pas avec types scalaires : int, bool, string, f
 - [:tv: POO PHP](https://www.grafikart.fr/formations/programmation-objet-php)
 
 :book: Lecture conseillée :
-<a href="https://books.google.fr/books/about/Design_patterns.html?hl=fr&id=zzdn6U95_f8C" target="_blank">Design pattern la tête la 1ère</a>
+<a href="https://google.fr/?q=Design pattern la tête la 1ère">Design Pattern la tête la première</a>
 
