@@ -37,9 +37,9 @@ Les classes permettent de représenter des entités conçues pour notre applicat
 
 Exemples : 
 
-- données : au plus simple un base de données contenant un table
+- représentation de données : au plus simple une base de données contenant une table
 - Jeu : Si je développe un jeu type Space Invaders, différents types d'entités seront utilisées
-  - quels entitées ?
+  - quels entités ?
 
 [méthodes magiques](http://php.net/manual/fr/language.oop5.overloading.php)
 
@@ -49,9 +49,18 @@ Exemples :
 
 #### Propriétés / Attributs
 
-- visiblité : public, protected
-- informations contenues / exposées par une instance ou par une classe ( static )
+- informations contenues / exposées par une instance ou par une classe
 
+**Visiblité**
+
+- **public** : peut être lu & écrit par n'importe quel autre objet
+- ou **private** : ne peut être vu qu'au sein de la classe elle-même
+- ou encore **protected**, et dans ce cas être accessible depuis la classe et ses "descendantes" ( les classes qui héritent de ...)
+
+- getter & setter : permettent de ne pas exposer directement l'accès au propriétés. Pas de mot clé `set` ou `get` en PHP.
+La convention est de créer des fonctions getTitle() & setTitle() et de déclarer un variable $_title
+
+- si la propriété est définie comme `static` , elle est accessible directement sur la classe. Souvent utilisé pour définir des constantes, exemple : `PDO::PARAM_STR`
 
 #### Méthodes / Fonctions
 
@@ -63,7 +72,10 @@ Là aussi, ce posera la question de la visibilité; les méthodes peuvent être 
 - ou  **private**, et n'être utilisées qu'au sein de la classe elle-même
 - ou  encore **protected**, et dans ce cas être accessible depuis la classe et ses "descendantes"
 
-Les méthodes peuvent également être **static**,
+Les méthodes peuvent également être **static**, c'est à dire être accessible directement sur la classe, sans avoir de créer d'instance.
+Nous avons déjà utilisé des méthodes static : 
+- en js : Math.random()
+
 
 #### [Méthodes de surcharge magique](http://php.net/manual/fr/language.oop5.overloading.php)
 
