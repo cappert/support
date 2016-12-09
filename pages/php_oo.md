@@ -114,13 +114,13 @@ class IndexView extends PageView{
 ```
 
 Même s'il est souvent tentant d'utiliser l'héritage pour ajouter des fonctionnalités à une classe de base,
-l'héritage devrait principalement être utilisé pour des spécialisations.
+l'héritage devrait principalement être utilisée pour des spécialisations.
 
 Normalement, si une classe B étend une classe A, elle devrait avoir la même API.
 Par exemple, elle devrait pouvoir redéfinir l'implémentation de certaines méthodes de la classe A ( override ),
 mais elle ne devrait pas, en principe, ajouter de nouvelles méthodes publiques.
 
-En réalité, ce principe n'est jamais strictement respecté, mais devrait toutefois être gardé en tête pour limiter les trop longues chaines d'héritages, où les classes pourtant parentes, non plus grand chose à voir les unes avec les autres.
+En réalité, ce principe n'est jamais strictement respecté, mais devrait toutefois être gardé en tête pour limiter les trop longues chaines d'héritages, où les classes pourtant parentes, n'ont plus grand chose à voir les unes avec les autres.
 
 ```php
 class Neandertal{
@@ -225,7 +225,7 @@ class Voyageur{
 #### Interface
 
 Une interface permet de définir un type d'objet non pas en fonction de l'implementation de ses méthodes,
-mais seulement sur leur déclaration.
+mais seulement sur leurs déclarations.
 
 Une interface déclare ainsi les **méthodes publiques** qu'une classe doit contenir pour implémenter une interface.
 
