@@ -2,7 +2,7 @@
 layout: post
 title:  "Projets exploration"
 date:   2016-10-04 09:00:00 +0200
-categories: hebdo
+
 ---
 
 ## [SVG](https://tienn1962.github.io/Groupe_SVG/)
